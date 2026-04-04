@@ -1,0 +1,50 @@
+{
+  "name": "vitest-pdf-snapshot",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.33.0",
+  "description": "A custom Vitest matcher for PDF visual regression testing with snapshot support",
+  "author": "dapotatoman",
+  "license": "MIT",
+  "homepage": "https://github.com/dapotatoman/vitest-pdf-snapshot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaPotatoMan/vitest-pdf-snapshot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DaPotatoMan/vitest-pdf-snapshot/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vp pack",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build",
+    "prepare": "vp config"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "glob": "^13.0.0",
+    "pdf-visual-diff": "^0.15.2",
+    "vitest": "^4.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^8.0.0",
+    "@types/node": "^25.5.2",
+    "@typescript/native-preview": "7.0.0-dev.20260404.1",
+    "bumpp": "^11.0.1",
+    "eslint": "^10.1.0",
+    "typescript": "^6.0.2",
+    "vite-plus": "^0.1.15"
+  }
+}
