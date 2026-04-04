@@ -1,6 +1,4 @@
-# vitest-pdf-snapshot
-
-A custom matcher for Vitest that lets you do visual regression testing on PDFs.
+PDF visual snapshot matcher for Vitest
 
 ## Install
 
@@ -20,9 +18,13 @@ In your code
 
 ```typescript
 await expect(path).toMatchPDFSnapshot()
-```
 
-The first run creates a snapshot in `__snapshots__/test_name.png`. Subsequent runs compare against it.
+await expect(buffer).toMatchPDFSnapshot({
+  // Required for buffer input
+  // Outputs to __snapshots__/images/visual.png
+  name: `images/visual`
+})
+```
 
 ## License
 
