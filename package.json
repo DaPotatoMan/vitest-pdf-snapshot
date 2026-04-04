@@ -16,8 +16,8 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/index.mjs"
+      "types": "./src/types.d.ts",
+      "import": "./src/index.ts"
     }
   },
   "files": [
@@ -31,14 +31,21 @@
     "prepare": "vp config"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/types.d.ts",
+        "import": "./dist/index.mjs"
+      }
+    }
   },
   "peerDependencies": {
     "vitest": "^3.0.0 || ^4.0.0"
   },
   "dependencies": {
     "glob": "^13.0.0",
-    "pdf-visual-diff": "^0.15.2"
+    "pdf-visual-diff": "^0.15.2",
+    "sanitize-filename": "^1.6.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^8.0.0",
