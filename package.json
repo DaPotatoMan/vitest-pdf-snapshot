@@ -9,7 +9,7 @@
   "homepage": "https://github.com/dapotatoman/vitest-pdf-snapshot#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DaPotatoMan/vitest-pdf-snapshot.git"
+    "url": "git+https://github.com/dapotatoman/vitest-pdf-snapshot.git"
   },
   "bugs": {
     "url": "https://github.com/DaPotatoMan/vitest-pdf-snapshot/issues"
@@ -34,9 +34,11 @@
     "access": "public"
   },
   "peerDependencies": {
+    "vitest": "^3.0.0 || ^4.0.0"
+  },
+  "dependencies": {
     "glob": "^13.0.0",
-    "pdf-visual-diff": "^0.15.2",
-    "vitest": "^4.1.0"
+    "pdf-visual-diff": "^0.15.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^8.0.0",
