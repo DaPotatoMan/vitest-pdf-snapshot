@@ -1,14 +1,20 @@
 import type { CompareOptions } from 'pdf-visual-diff'
 
 import fs from 'node:fs'
-import { dirname, join } from 'node:path'
+import path from 'node:path'
 import { glob } from 'glob'
 import { comparePdfToSnapshot } from 'pdf-visual-diff'
-
 import { expect } from 'vitest'
 
+function sanitizeName(input: string): string {
+  return input
+    .trim()
+    .replace(' > ', '.')
+    .replace(/ /g, '_')
+}
+
 async function approveSnapshots(cwd: string, name: string) {
-  const snapshotDir = join(cwd, '__snapshots__')
+  const snapshotDir = path.join(cwd, '__snapshots__')
   const files = await glob(`${snapshotDir}/${name}?(.new|.diff).png`)
 
   for (const file of files)
@@ -36,11 +42,9 @@ expect.extend({
     if (!fs.existsSync(pdf))
       throw new Error(`PDF does not exist at path: ${pdf}`)
 
-    const cwd = dirname(testPath)
-    const snapshotName = currentTestName
-      .trim()
-      .replace(' > ', '.')
-      .replace(/ /g, '_')
+    const cwd = path.dirname(testPath)
+    const { name: fileName } = path.parse(pdf)
+    const snapshotName = sanitizeName(`${currentTestName} > ${fileName}`)
 
     // Approve conflicting snapshots
     if (isUpdating)
