@@ -10,6 +10,10 @@ import { getSnapshotName } from './utils.ts'
 async function approveSnapshots(base: string, name: string) {
   const files = await glob(`${base}/${name}?(.new|.diff).png`)
 
+  // No diff files were created
+  if (files.length <= 1)
+    return
+
   for (const file of files)
     fs.rmSync(file)
 }
