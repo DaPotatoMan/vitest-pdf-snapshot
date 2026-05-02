@@ -28,7 +28,8 @@
     "test": "vp test",
     "check": "vp check",
     "prepublishOnly": "vp run build",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "release": "npm run test -- --run && changelogen --release --prepatch && npm publish && git push --follow-tags"
   },
   "publishConfig": {
     "access": "public",
@@ -52,6 +53,7 @@
     "@types/node": "^25.5.2",
     "@typescript/native-preview": "7.0.0-dev.20260404.1",
     "bumpp": "^11.0.1",
+    "changelogen": "^0.6.2",
     "eslint": "^10.1.0",
     "typescript": "^6.0.2",
     "vite-plus": "^0.1.15"
