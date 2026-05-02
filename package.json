@@ -1,7 +1,7 @@
 {
   "name": "vitest-pdf-snapshot",
   "type": "module",
-  "version": "0.0.2-0",
+  "version": "0.0.2",
   "packageManager": "pnpm@10.33.0",
   "description": "A custom Vitest matcher for PDF visual regression testing with snapshot support",
   "author": "dapotatoman",
