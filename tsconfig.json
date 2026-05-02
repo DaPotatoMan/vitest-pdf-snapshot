@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["es2023"],
+    "lib": ["ESNext"],
     "moduleDetection": "force",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "types": ["node", "vitest/globals"],
     "allowImportingTsExtensions": true,
@@ -13,6 +13,7 @@
     "declaration": true,
     "noEmit": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true
