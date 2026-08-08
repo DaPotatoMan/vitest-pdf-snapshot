@@ -12,9 +12,6 @@ importers:
 
   .:
     dependencies:
-      glob:
-        specifier: ^13.0.0
-        version: 13.0.6
       pdf-visual-diff:
         specifier: ^0.15.2
         version: 0.15.2
