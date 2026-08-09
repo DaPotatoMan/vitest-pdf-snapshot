@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.0.3-0
+
+[compare changes](https://github.com/dapotatoman/vitest-pdf-snapshot/compare/v0.0.2-0...v0.0.3-0)
+
+### 🚀 Enhancements
+
+- Update pnpm version ([6d51b5b](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/6d51b5b))
+
+### 🩹 Fixes
+
+- Package version ([2fddd1a](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/2fddd1a))
+- Update snapshots safely in update mode ([621406d](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/621406d))
+
+### 🏡 Chore
+
+- Update package.json ([cc8c27b](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/cc8c27b))
+- Update deps ([57e6164](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/57e6164))
+- Update docs ([d2581d7](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/d2581d7))
+- Update test snapshots ([3ddb8e0](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/3ddb8e0))
+
+### ❤️ Contributors
+
+- Fahad ([@DaPotatoMan](https://github.com/DaPotatoMan))
+
 ## v0.0.2-0
 
 
