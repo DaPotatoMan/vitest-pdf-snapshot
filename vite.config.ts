@@ -17,7 +17,9 @@ export default defineConfig({
       typeCheck: true
     }
   },
-  fmt: {},
+  fmt: {
+    singleQuote: true
+  },
 
   test: {
     globals: true

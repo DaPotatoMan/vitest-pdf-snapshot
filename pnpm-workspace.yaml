@@ -1,6 +1,19 @@
 shellEmulator: true
-
 trustPolicy: no-downgrade
+
 overrides:
-  vite: "npm:@voidzero-dev/vite-plus-core@latest"
-  vitest: "npm:@voidzero-dev/vite-plus-test@latest"
+  vite: "catalog:"
+  vitest: "catalog:"
+
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@0.2.8
+  vite-plus: 0.2.8
+  vitest: 4.1.10
+
+peerDependencyRules:
+  allowAny:
+    - vite
+    - vitest
+  allowedVersions:
+    vite: "*"
+    vitest: "*"
