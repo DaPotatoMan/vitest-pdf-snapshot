@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/dapotatoman/vitest-pdf-snapshot/compare/v0.0.3-0...v0.0.4)
+
+### 🩹 Fixes
+
+- Package version ([f20ad4f](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/f20ad4f))
+- Update release script ([1f12691](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/1f12691))
+
+### 🏡 Chore
+
+- Update deps ([f0850af](https://github.com/dapotatoman/vitest-pdf-snapshot/commit/f0850af))
+
+### ❤️ Contributors
+
+- Fahad ([@DaPotatoMan](https://github.com/DaPotatoMan))
+
 ## v0.0.3-0
 
 [compare changes](https://github.com/dapotatoman/vitest-pdf-snapshot/compare/v0.0.2-0...v0.0.3-0)
