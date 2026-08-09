@@ -1,28 +1,27 @@
 {
   "name": "vitest-pdf-snapshot",
-  "type": "module",
-  "version": "0.0.3-0",
-  "packageManager": "pnpm@11.20.0+sha512.9a6f330a95b66446ea088faf1521405a8a01f07fde7124cc9958dfed52d4bb436737e65b08f85f37b46fcba375092558ac51262b816844b22f63406ed166bfee",
+  "version": "0.0.3",
   "description": "A custom Vitest matcher for PDF visual regression testing with snapshot support",
-  "author": "dapotatoman",
-  "license": "MIT",
   "homepage": "https://github.com/dapotatoman/vitest-pdf-snapshot#readme",
+  "bugs": {
+    "url": "https://github.com/DaPotatoMan/vitest-pdf-snapshot/issues"
+  },
+  "license": "MIT",
+  "author": "dapotatoman",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dapotatoman/vitest-pdf-snapshot.git"
   },
-  "bugs": {
-    "url": "https://github.com/DaPotatoMan/vitest-pdf-snapshot/issues"
-  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
   "exports": {
     ".": {
       "types": "./src/types.d.ts",
       "import": "./src/index.ts"
     }
   },
-  "files": [
-    "dist"
-  ],
   "publishConfig": {
     "main": "./dist/index.mjs",
     "types": "./dist/types.d.ts",
@@ -42,9 +41,6 @@
     "prepare": "vp config",
     "release": "npm run test -- --run && changelogen --release --prepatch && npm publish && git push --follow-tags"
   },
-  "peerDependencies": {
-    "vitest": "^3.0.0 || ^4.0.0"
-  },
   "dependencies": {
     "pdf-visual-diff": "^0.15.2",
     "sanitize-filename": "^1.6.4"
@@ -58,5 +54,9 @@
     "eslint": "^10.1.0",
     "typescript": "^6.0.2",
     "vite-plus": "^0.1.15"
-  }
+  },
+  "peerDependencies": {
+    "vitest": "^3.0.0 || ^4.0.0"
+  },
+  "packageManager": "pnpm@11.20.0+sha512.9a6f330a95b66446ea088faf1521405a8a01f07fde7124cc9958dfed52d4bb436737e65b08f85f37b46fcba375092558ac51262b816844b22f63406ed166bfee"
 }
